@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background: linear-gradient(black , #222);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    background-color: rgba(245, 245, 220, 0.11);
+    width: 80%;
+    height: 80%;
+    border-radius: 19px;
+    user-select: none;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    padding: 1.25em 0em;
+}
+.logo{
+    margin-top: 9px;
+    font-size: 2.5em;
+    color: rgba(255, 255, 255, 0.829);
+}
+nav ul li{
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 1.25px;
+    margin: 0em 0.125em;
+}
+nav ul li a{
+    color: azure;
+    text-decoration: none;
+    font-size: 12px;
+}
+a:hover{
+    color: rgb(172, 172, 196);
+}
+.content{
+    margin-top: 4.5em;
+}
+.par-tit{
+    text-align: center;
+}
+.par-tit h2 , h3{
+    color: white;
+    font-weight: 800;
+    letter-spacing: 2px;
+    animation:  identifier 2s ease 1ms infinite alternate-reverse none running;
+}
+@keyframes identifier {
+    from{
+        translate: 2px 0;
+    }
+    to{
+        color: #e7d6d600;
+        scale: 1.01;
+    }
+}
+#p-1{
+    color: azure;
+    letter-spacing: 1.4px;
+}
+@media (max-width:600px){
+    .content{
+        margin-top: 7em;
+    }
+}
+@media (min-width:601px) and (max-width:992px){
+    .content{
+        margin-top: 10em;
+    }
+}
